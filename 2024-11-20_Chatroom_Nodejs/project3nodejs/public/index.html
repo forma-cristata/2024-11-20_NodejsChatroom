@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <title>AliasCheck</title>
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+<h1 class="d-none">Alias Check</h1>
+<div id="bg" class="m-auto"></div>
+<div id="img-overlay"></div>
+<form id="container" class="form-sign-in">
+
+  <div class="m-auto" id="contents">
+    <h1 class="h3 fw-normal">Choose an alias to join the chat room</h1>
+    <div class="form-floating">
+      <input type="text" class="form-control" id="alias-input" minlength="8" maxlength="25" placeholder="anonymous2024!" required />
+      <label for="alias-input">Alias</label>
+    </div>
+    <h5 id="error" class="d-none">Invalid Alias. Must be at least 8 characters, cannot contain "*"</h5>
+    <button type="submit" id="submit-btn" class="btn btn-primary w-100 my-3 py-2">start chatting</button>
+  </div>
+</form>
+<script type="module" src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script type="module" src="js/index.mjs"></script>
+</body>
+</html>

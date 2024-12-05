@@ -1,0 +1,137 @@
+@import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+#bg
+{
+    background-image: url(../images/leaves.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+}
+#chatroom
+{
+    height: 70vh;
+    width: 90vw;
+    top: 50%;
+    padding: 2rem 2rem;
+    position: fixed;
+    background-color: var(--bs-body-bg);
+    border-radius: 16px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.8;
+    min-height: fit-content;
+    min-width: fit-content;
+}
+#contents
+{
+    height: 35vh;
+    width: 50vw;
+    min-height: fit-content;
+    min-width: fit-content;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--bs-body-bg);
+    opacity: 0.8;
+    border-radius: 16px;
+    padding: 4rem 2rem;
+    align-content: center;
+
+}
+#error
+{
+    color: red;
+}
+.error
+{
+    color: red;
+    display: inline-block;
+}
+#header
+{
+    padding: 10px;
+}
+html
+{
+    background: black;
+}
+#img-overlay
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--bs-body-bg); /*Change with mode selections*/
+    opacity: 0.1;
+}
+.input-comments
+{
+    height: 6rem;
+    width: 85vw;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    bottom: calc(50% - 70vh/2);
+    padding: 5px 5px;
+    cursor: pointer;
+    overflow-y: scroll;
+}
+.no
+{
+    color: red;
+    position: fixed;
+    left: calc(50% - 85vw/2);
+    bottom: calc(50% - 55vh/2);
+}
+#posted-comments
+{
+    position: fixed;
+    height: 45vh;
+    width: 85vw;
+    top: 50%;
+    left: 50%;
+    border-radius: 16px;
+    background-color: var(--bs-body-bg);
+    opacity: 0.7;
+    transform: translate(-50%, -50%);
+    border: 3px solid white;
+    overflow-y: scroll;
+    padding: 5px 5px;
+}
+.returned-comments
+{
+    width: 85vw;
+    text-wrap: wrap;
+}
+#submit-btn
+{
+    font-variant: small-caps;
+}
+::-webkit-scrollbar
+{
+    width: 20px;
+}
+::-webkit-scrollbar-track
+{
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb
+{
+    background: var(--bs-body-bg);
+    border-radius: 10px;
+}
+#write-comment
+{
+    border-radius: 16px;
+    background-color: var(--bs-body-bg);
+    opacity: 0.7;
+    border: 3px solid white;
+    font-family: monospace;
+}

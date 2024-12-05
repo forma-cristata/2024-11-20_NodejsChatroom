@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat Room</title>
+
+<link rel="stylesheet" href="./css/index.css">
+<body>
+<h1 class="d-none">Chat Room</h1>
+<div id="bg" class="m-auto"></div>
+<div class="m-auto" id="chatroom">
+    <div id="header">
+        <button type="button" class="btn btn-secondary" id="leave-chatroom-btn">Leave Chatroom</button>
+        <button type="button" class="btn btn-secondary" id="edit-alias-btn">Change Alias</button>
+        <div id="edit-alias" class="form-floating d-none d-inline-block">
+            <input type="text" id="new-alias-input" minlength="8" maxlength="25" class="form-control" placeholder="" />
+            <label for="new-alias-input">Alias</label>
+        </div>
+        <p id="edit-alias-error" class="error d-none">Alias must be (8:25] characters and cannot include "*"</p>
+    </div>
+    <div id="alias-check"></div>
+    <div id="posted-comments"></div>
+    <div id="compose-comments" class="form-floating input-comments">
+        <input type="text" id="write-comment" maxlength="150" class="form-control" placeholder="" />
+        <label for="write-comment"></label>
+    </div>
+    <p id="no" class="d-none no">150 characters maximum</p>
+    <p id="no1" class="d-none no">'*' is not a permitted character</p>
+</div>
+<script type="module" src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script type="module" src="./js/home.mjs"></script>
+</body>
+</html>
