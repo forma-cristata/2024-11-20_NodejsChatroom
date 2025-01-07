@@ -30,7 +30,7 @@ The chat system supports several commands:
 - Parcel bundler
 - Nodemon for development
 
-## Implementation Details
+## Details
 
 The application uses a single WebSocket server instance to manage all client connections. Each client connection is stored in a Map structure with unique identifiers. The server handles message broadcasting, nickname management, and command processing.
 
